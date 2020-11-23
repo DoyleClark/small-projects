@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text" id="name" placeholder="Name"/>
+	<button id="button">Submit</button>
+	<div class="response"></div>
+
+	<script type="text/javascript">
+		$('#button').click(function(){
+
+			var name=$('#name').val();
+			$.ajax({
+				url:'jquery ajax.php',
+				data:'name='+name,
+				success:function(data){
+					$('.response').text(response);
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>

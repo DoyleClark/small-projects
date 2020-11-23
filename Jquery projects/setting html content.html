@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	img{
+		width;300px
+	}
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+<p>text1</p>
+<p>text2</p>
+<input type="text" id="name" placeholder="First Name"/>
+<img src="../css projects/images/bunnyandbearcute.png">
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert($("p:nth-child(2)").html());
+		alert($("p:nth-child(2)").text());
+		alert($("#name").attr("placeholder"));
+		alert($("img").attr("src"));
+
+		$("p:nth-child(2)").html("<b>Shalom</b>");
+		$("#name").attr("placeholder","Last Name");
+
+		//.val() will get the value from teh input field
+	});
+</script>
+</script>
+</body>
+</html>

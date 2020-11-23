@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!--<button id="click" onclick="retrieve()">Click Me</button>-->
+	<input type="text" id="name" onkeyup="retrieve()">
+	<div id="result"></div>
+	<script type="text/javascript">
+
+		function retrieve(){
+			var xhr;
+			var name=document.getElementById("name").value;
+			var length=name.length;
+			if(length==0){
+				document.getElementById('result').innerHTML="";
+			}else{
+				if(window.ActiveXObject){
+				try{
+					xhr=new ActiveXObject("macOS.XMLHTTP");
+				}catch(e){
+					alert('error');
+				}
+				//xhr=new ActiveXObject("macOS.XMLHTTP");
+				}else if(window.XMLHttpRequest){
+					try{
+						xhr=new XMLHttpRequest();
+				}	catch(e){
+						alert('error');
+				}
+				//xhr=new XMLHttpRequest();
+			}
+
+		//normal request code using GET method
+
+		xhr.onreadystatechange=function(){
+			if(this.readyState==4&&this.status==200){
+				document.getElementById('result').innerHTML=this.responseText;
+			}
+		}
+
+		/*
+		readyState:
+		0-request not initialized
+		1-server connection established
+		2-request received
+		3-server processing the request
+		4-processing finished and repsonse got ready
+
+		status:
+		200-ok
+		404-not found
+		403-forbidden
+		*/
+
+		xhr.open("GET","search.php?name="+name,true);
+		xhr.send();
+			}
+		}
+
+	</script>
+</body>
+</html>

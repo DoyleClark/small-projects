@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+
+<div class="outer">
+	<h1>Outer div</h1>
+	<div class="inner">
+		<h1>Inner div</h1>
+		<div class="last-div">
+			<p>Paragraph1</p>
+			<p>Paragraph2</p>
+			<p class="middle">Paragraph3</p>
+			<p>Paragraph4</p>
+			<h1>Last Div</h1>
+			<p>Paragraph5</p>
+			<p>Paragraph6</p>
+		</div>
+	</div>
+	<p>Paragraph1</p>
+</div>
+<script type="text/javascript">
+	//$('.last-div p').siblings().css('border','2px solid red');
+	//$('.last-div p').prev().css('border','2px solid red');
+	//$('.last-div h1').prevAll().css('border','2px solid red');
+	//$('.last-div p').next().css('border','2px solid red');
+	//$('.last-div h1').nextAll().css('border','2px solid red');
+	$('.last-div h1').prevUntil('.middle').css('border','2px solid red');
+</script>
+</body>
+</html>

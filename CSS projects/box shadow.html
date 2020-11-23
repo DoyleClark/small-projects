@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#container
+		{
+			position:relative;
+			width:300px;
+			height: 300px;
+		}
+
+
+
+		img
+		{
+			width:300px;
+			height: 300px;
+			position: absolute;
+			opacity: 0.4;
+			//filter:Alpha(opacity=50);
+		}
+
+		#container:hover img
+		{
+			opacity: 1;
+		}
+
+		#container:hover p
+		{
+			color:red;
+		}
+
+		#container:hover
+		{
+			box-shadow: 10px 10px 25px 2px #333;
+		}
+
+		p
+		{
+			color:#fff;
+			position: absolute;
+			text-align: center;
+			width: 300px;
+			font-size: 50px;
+		}
+
+		.inner-shadow
+		{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+		}
+
+		.inner-shaow:hover
+		{
+			box-shadow: 10px 10px 25px 2px #333 inset;
+		}
+	</style>
+</head>
+<body>
+
+	<dir is="container">
+		<img src="images/bunnyandbearcute.png">
+		<p>Field</p>
+	</dir>
+
+	<div class="inner-shaow">
+	</div>
+
+</body>
+</html>

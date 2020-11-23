@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		//first way to write an array
+		var friends=new Array("Peach","Doyle","Lexie","Alexandra");
+		document.write(friends[3]+"<br>");
+
+		//second way to write an array
+		var fruits=new Array(3);
+		fruits[0]="Apple";
+		fruits[1]="Kiwi";
+		fruits[2]="Orange";
+		document.write(fruits[2]+"<br>");
+
+		//third way to write an array
+		var hobbies=new Array();
+
+		//hobbies[0]="coding";
+		hobbies.push("coding");
+		hobbies.push("gaming");
+		hobbies.push("mathematics");
+		hobbies.push("c++", "java");
+		document.write("<br>"+hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+		hobbies.pop();
+		document.write("<br>"+hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+		hobbies.pop();
+		document.write("<br>"+hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+		//document.write("<br>"+hobbies[0]);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

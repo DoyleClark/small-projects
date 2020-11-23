@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+	select a number between 1 and 10
+<input type="number" id="number" min=1 max=10>
+<p class="show">You entered a value greater than 5</p>
+<p class="hide">You entered a value less than or equal to 5</p>
+<script type="text/javascript">
+
+	$(window).on("load",function(){
+		$("p.show").hide();
+	});
+	
+	$(document).ready(function(){
+		$("#number").change(function(){
+			var num=$(this).val();
+			//alert(num);
+			if(num>5){
+				$("p.show").show(1000);
+				$("p.hide").hide();
+			}else{
+				$("p.show").hide();
+				$("p.hide").show(1000);
+			}
+		});
+	});
+</script>
+</body>
+</html>

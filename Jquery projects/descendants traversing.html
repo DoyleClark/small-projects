@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+
+<div class="outer">
+	<h1>Outer div</h1>
+	<div class="inner">
+		<h1>Inner div</h1>
+		<div class="last-div">
+			<h1>Last Div</h1>
+			<p>Paragraph1</p>
+			<p>Paragraph2</p>
+		</div>
+	</div>
+	<p>Paragraph</p>
+</div>
+<script type="text/javascript">
+	//$('.outer').children().css('color', 'red');
+	$('.outer').children().css('border', '2px solid blue');
+	$('.inner').children().css('border','2px solid red');
+
+	$('.outer').find('p').css('border','2px solid green');
+</script>
+</body>
+</html>

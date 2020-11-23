@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var xhr;
+		if(window.ActiveXObject){
+			try{
+				xhr=new ActiveXObject("macOS.XMLHTTP");
+			}catch(e){
+				alert('error');
+			}
+			//xhr=new ActiveXObject("macOS.XMLHTTP");
+		}else if(window.XMLHttpRequest){
+			try{
+				xhr=new XMLHttpRequest();
+			}catch(e){
+				alert('error');
+			}
+			//xhr=new XMLHttpRequest();
+		}
+		var value="best";
+
+		//normal request code using GET method
+		xhr.open("GET","me.txt",true);
+		xhr.send();
+
+		var param="fName=Doyle&lName=Peach"
+
+		//advanced
+		xhr.open("GET","me.txt?name="+value,true);
+		xhr.send();
+
+		//normal POST method
+		xhr.open("POST","me.txt",true);
+		xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+		xhr.send();
+
+		xhr.open("POST","me.txt",true);
+		xhr.setRequestHeader('content-type','applicatiom/x-www-form-urlencoded');
+		xhr.send(param);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

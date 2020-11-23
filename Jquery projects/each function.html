@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+	<p>paragraph0</p>
+	<p>paragraph1</p>
+	<p>paragraph2</p>
+	<p>paragraph3</p>
+	<button id="click">click me</button>
+
+<script type="text/javascript">
+	$('#click').click(function(){
+		$('p').each(function(){
+		$('body').append('shalom<br>');
+		alert($(this).html());
+		});
+	});
+
+</script>
+</body>
+</html>

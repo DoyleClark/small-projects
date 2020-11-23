@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+	<button id="click">add text</button>
+	<button id="click1">remove blue background color from text</button>
+
+<script type="text/javascript">
+	$('#click').click(function() {
+		$('body').append('<p>text</p>');
+		//$('p').css('color', 'red');
+		$('p').css({'color':'red','background-color':'blue'});
+	});
+
+	$('#click1').click(function() {
+		$('p').removeClass('red background-blue');
+	});
+
+</script>
+</body>
+</html>

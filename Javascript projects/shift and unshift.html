@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		var hobbies=new Array();
+
+		hobbies.push("coding");
+		hobbies.push("gaming");
+		hobbies.push("mathematics");
+		hobbies.push("c++", "java");
+		document.write(hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+		hobbies.shift();
+		document.write("<br>"+hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+		hobbies.shift();
+		document.write("<br>"+hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+		hobbies.unshift("coding","javascript");
+
+		document.write("<br>"+hobbies.length+"<br>");
+		for(i=0;i<hobbies.length;i++){
+			document.write(hobbies[i]+"<br>");
+		}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

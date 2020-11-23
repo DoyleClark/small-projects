@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<style type="text/css">
+		.navbar-header,#myNav{
+			background-color: #34495e;
+		}
+		#myNav li a{
+			color: #fff;
+		}
+		#myNav li.active a{
+			color: #e74c3c;
+		}
+		#myNav li.active a{
+			background-color: #333976;
+		}
+		#myNav li a:hover{
+			color: #e74c3c;
+		}
+		.navbar-default .navbar-brand{
+			color: #fff;
+		}
+		.navbar-default .navbar-brand:hover{
+			color: #e74c3c;
+		}
+		.dropdown-menu{
+			background-color:#34495e;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/respond.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<!-- html5 tag telling the browser it is navigation -->
+			<!-- nav has two classes; navbar and navbar-default. Can provide a role of navigation to it-->
+			<!-- nav has four attributes: type, class, data-toggle, data target -->
+			<nav class="navbar navbar-default" role="navigation">
+				<!-- two <div>. First <div> is a button forresponsive purposes, and the second <div> is for the main navigation -->
+				<!-- navbar header used for logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+						<!-- screen reader -->
+						<span class="sr-only">Toggle Navigation</span>
+						<!-- adds lines -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Logo</a>
+				</div>
+				<!-- collapse and navbar-collapse is a bootstrap associated class -->
+				<div class="collapse navbar-collapse" id="myNav">
+					<!-- actual nav -->
+					<!-- navbar-right pushes nav to the right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown">Services<span class="caret"></span></li>
+							<!-- basic markup dropdown -->
+							<ul class="dropdown-menu">
+								<li><a href="">SubMenu0</a></li>
+								<li><a href="">SubMenu1</a></li>
+								<li><a href="">SubMenu2</a></li>
+								<li><a href="">SubMenu3</a></li>
+							</ul>
+						<li><a href="#">Github</li>
+						<li><a href="#">About</li>
+						<li><a href="#">Contact</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

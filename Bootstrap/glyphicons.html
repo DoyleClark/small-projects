@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<style type="text/css">
+		.navbar-header,#myNav{
+			background-color: #34495e;
+		}
+		#myNav li a{
+			color: #fff;
+		}
+		#myNav li.active a{
+			color: #e74c3c;
+		}
+		#myNav li.active a{
+			background-color: #333976;
+		}
+		#myNav li a:hover{
+			color: #e74c3c;
+		}
+		.navbar-default .navbar-brand{
+			color: #fff;
+		}
+		.navbar-default .navbar-brand:hover{
+			color: #e74c3c;
+		}
+		.dropdown-menu{
+			background-color:#34495e;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/respond.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<!-- stacked menu -->
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#one" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span> &nbsp;&nbsp;Web Design</a></li>
+					<li class="active"><a href="#two" data-toggle="tab"><span class="glyphicon glyphicon-leaf"></span> &nbsp;&nbsp;Web Development</a></li>
+					<li><a href="#three" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span> &nbsp;&nbsp;Graphic Design</a></li>
+					<li><a href="#four" data-toggle="tab"><span class="glyphicon glyphicon-tasks"></span> &nbsp;&nbsp;Theme Development</a></li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+				<div class="tab-content">
+					<div id="one" class="tab-pane fade">
+						<h1>Web Design</h1>
+						<p>CSS and Html stylesheets</p>
+					</div>
+					<div id="two" class="tab-pane fade active in">
+						<h1>Web development</h1>
+						<p>Bootstrap development</p>
+					</div>
+					<div id="three" class="tab-pane fade">
+						<h1>Graphic Design</h1>
+						<p>Ummm...</p>
+					</div>
+					<div id="four" class="tab-pane fade">
+						<h1>Theme Development</h1>
+						<p>Indeed</p>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<hr>
+
+		<div class="row">
+				<!-- unstacked menu -->
+				<ul class="nav nav-pills">
+					<li><a href="#one1" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span> &nbsp;&nbsp;Web Design</a></li>
+					<li class="active"><a href="#two2" data-toggle="tab"><span class="glyphicon glyphicon-leaf"></span> &nbsp;&nbsp;Web Development</a></li>
+					<li><a href="#three3" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span> &nbsp;&nbsp;Graphic Design</a></li>
+					<li><a href="#four4" data-toggle="tab"><span class="glyphicon glyphicon-tasks"></span> &nbsp;&nbsp;Theme Development</a></li>
+				</ul>
+			
+			
+				<div class="tab-content">
+					<div id="one1" class="tab-pane fade">
+						<h1>Web Design</h1>
+						<p>CSS and Html stylesheets</p>
+					</div>
+					<div id="two2" class="tab-pane fade active in">
+						<h1>Web development</h1>
+						<p>Bootstrap development</p>
+					</div>
+					<div id="three3" class="tab-pane fade">
+						<h1>Graphic Design</h1>
+						<p>Ummm...</p>
+					</div>
+					<div id="four4" class="tab-pane fade">
+						<h1>Theme Development</h1>
+						<p>Indeed</p>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<p>Shalom world</p>
+<h1 class="doubleClick">Shalom there world.</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//mouse click events
+		$("p").click(function(){
+			alert("shalom clicked");
+		});
+		$("h1.doubleClick").dblclick(function(){
+			alert("shalom there was double clicked");
+		});
+		//mouse hover events
+		$("p").mouseenter(function(){
+			alert("mouse hover");
+		});
+		$("p").mouseleave(function(){
+			alert("mouse left");
+		});
+	});
+</script>
+</body>
+</html>

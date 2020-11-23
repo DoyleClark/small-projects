@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script src="js/jquery">\x3C/script>');
+	</script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	//using html method
+	var text1='<p class="text1">text1</p>';
+	//using jquery method
+	var text2=$('<p class="text2"></p>').text("text2");
+	//using javascript method
+	var text3=document.createElement("p");
+
+	$("body").append(text1,text2);
+	$('p.text1').append('<b>added to text1</b>');
+	$('p.text2').prepend('<i>added to text 2</i>')
+	
+	$('p.text1').after('<h1>heading1</h>');
+	$('p.text2').before('<h1>heading2</h>');
+
+</script>
+</body>
+</html>
